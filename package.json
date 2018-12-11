@@ -1,0 +1,33 @@
+{
+  "name": "hello-hyperapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "ssh://git@github.com/c18t/hello-hyperapp.git",
+  "author": "Uchi <u@chimata.org>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack --run-dev",
+    "prod": "webpack --run-prod",
+    "watch:dev": "yarn dev --watch",
+    "watch:prod": "yarn prod --watch",
+    "serve": "browser-sync start --server dist/ --files dist/*",
+    "serve:dev": "npm-run-all -p watch:dev serve",
+    "serve:prod": "npm-run-all -p watch:prod serve"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.12",
+    "browser-sync": "^2.26.3",
+    "css-loader": "^2.0.0",
+    "npm-run-all": "^4.1.5",
+    "style-loader": "^0.23.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "ts-loader": "^5.3.1",
+    "typescript": "^3.2.2",
+    "webpack": "^4.27.1",
+    "webpack-command": "^0.4.2"
+  },
+  "dependencies": {
+    "hyperapp": "^1.2.9"
+  }
+}
